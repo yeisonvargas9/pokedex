@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller 3</title>
+    <title>Taller 3 - Pokédex</title>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     <section>
-        <div>
-            <label for="pokemons">ELige tu Pokemón</label>
-            <select id="pokemons" onchange="pokemonSelected(this.value)">
-            <option value="">Select a Pokemon</option>
-        </select>
+        <div class="select-container">
+            <label for="pokemons">Elige tu Pokémon</label>
+            <select id="pokemons">
+                <option value="">Selecciona un Pokémon</option>
+            </select>
         </div>
 
         <div id="pokemon-info">
-            <h1 id="pokemon-name"></h1>   
-            <img id="pokemon-image">
-            <ul id="pokemon-stats"></ul>
+            <h1 id="pokemon-name"></h1>
+            <div class="image-container">
+                <img id="pokemon-image" src="" alt="">
+            </div>
+
+            <h2 id="title-Types">Tipos</h2>
+            <div id="pokemon-types" class="chip-container"></div>
+            
+            <h2 id="title-Abilities">Habilidades</h2>
+            <ul id="pokemon-abilities" class="list"></ul>
+
+            <h2 id="title-stats">Estadísticas</h2>
+            <ul id="pokemon-stats" class="list"></ul>
         </div>
     </section>
 </body>
 </html>
+

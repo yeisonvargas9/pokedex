@@ -1,11 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,7 +13,6 @@ body {
   align-items: center;
 }
 
-
 section {
   width: 340px;
   padding: 25px;
@@ -26,14 +22,12 @@ section {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-
 label {
   font-size: 14px;
   color: #444;
   margin-bottom: 6px;
   display: block;
 }
-
 
 select {
   width: 100%;
@@ -51,11 +45,9 @@ select:focus {
   box-shadow: 0 0 0 2px #60a5fa;
 }
 
-
 #pokemon-info {
   text-align: center;
 }
-
 
 #pokemon-name {
   text-transform: capitalize;
@@ -63,7 +55,6 @@ select:focus {
   margin-bottom: 10px;
   color: #1e293b;
 }
-
 
 #pokemon-image {
   width: 130px;
@@ -74,7 +65,6 @@ select:focus {
 #pokemon-image:hover {
   transform: scale(1.1);
 }
-
 
 ul {
   list-style: none;
@@ -90,14 +80,40 @@ ul li {
   background: linear-gradient(90deg, #f1f5f9, #e2e8f0);
 }
 
-
 h2 {
   font-size: 15px;
   margin: 10px 0;
   color: #475569;
 }
 
-#title-Abilities,
-#pokemon-abilities {
-    display: none;
+/* CORRECCIÓN AQUÍ: Ocultamos la info completa por defecto en vez de elemento por elemento */
+#pokemon-info {
+  display: none;
+}
+
+#pokemon-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 6px 0 12px;
+}
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.type-chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.35);
 }
